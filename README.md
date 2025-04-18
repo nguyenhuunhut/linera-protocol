@@ -110,11 +110,11 @@ linera wallet show
 linera query-balance "$CHAIN1"
 linera query-balance "$CHAIN2"
 
-# Transfer 10 units then 5 back.
+# Transfer 10 units then 5 back
 linera transfer 10 --from "$CHAIN1" --to "$CHAIN2"
 linera transfer 5 --from "$CHAIN2" --to "$CHAIN1"
 
-# Query balances again.
+# Query balances again
 linera query-balance "$CHAIN1"
 linera query-balance "$CHAIN2"
 
@@ -122,7 +122,7 @@ linera query-balance "$CHAIN2"
 linera transfer 5 --from "$CHAIN1" --to "$CHAIN1:$ACCOUNT1"
 linera transfer 2 --from "$CHAIN1:$ACCOUNT1" --to "$CHAIN2:$ACCOUNT2"
 
-# Query user balances again.
+# Query user balances again
 linera query-balance "$CHAIN1:$ACCOUNT1"
 linera query-balance "$CHAIN2:$ACCOUNT2"
 ```
